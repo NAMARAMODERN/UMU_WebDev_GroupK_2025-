@@ -1,2 +1,0 @@
-# Umu-gamers
-blog
