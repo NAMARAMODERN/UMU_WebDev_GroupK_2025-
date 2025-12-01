@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to the home of happiness</title>
+<link rel="icon" href="./car.jpg">
+<link href="./readmore.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <!-- FRONT CIRCLE -->
+  <div class="circle" id="circle">
+    <img src="./car.jpg" />
+  </div>
+
+  <!-- BLOG CARD GRID -->
+  <div class="blog-card" id="blogCard">
+
+    <div class="card card-1">
+      <div class="video-wrapper">
+        <img src="./blur.webp"  alt="Video 1 Thumbnail" id="videoThumbnail" style="cursor:pointer; width:300px;">
+        <div id="videoContainer" style="margin-top: 10px;"> 
+          <iframe width="677" height="391" src="https://www.youtube.com/embed/uwJPHUkft0A" title="Blur: 11 Years Later" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="card-content">
+        <h3>Blur</h3>
+        <p>"Power is nothing without control. Once you've raced, you never forget it.....and you never get over it"</p>
+        <a href="https://example.com/blur-download" target="_blank" style="color: #2ecc71; text-decoration: none;">DOWNLOAD</a>
+      </div>
+    </div>
+
+    <div class="card card-2">
+      <div class="video-wrapper">
+        <img src="./need for speed.jpg" alt="Video 2 Thumbnail" data-video="https://www.youtube.com/embed/MlKcCxaClIg">
+      </div>
+      <div class="card-content">
+        <h3>Need for Speed</h3>
+        <p>"if everything seems to be in control, you're not going fast enough. Power is nothing without control."</p>
+        <a href="https://example.com/need-for-speed-download" target="_blank" style="color: #2ecc71; text-decoration: none;">DOWNLOAD</a>
+      </div>
+    </div>
+
+    <div class="card card-3">
+      <div class="video-wrapper">
+        <img src="./realbike.jpg" alt="Video 3 Thumbnail" data-video="https://www.youtube.com/embed/dkZO5hZliSY">
+      </div>
+      <div class="card-content">
+        <h3>Real Bike Racing</h3>
+        <p>"Speed has never killed anyone, suddenly becoming stationary... that's what gets you into the dead zone"</p>
+        <a href="https://example.com/real-bike-download" target="_blank" style="color: #2ecc71; text-decoration: none;">DOWNLOAD</a>
+      </div>
+    </div>
+
+    <div class="card card-4">
+      <div class="video-wrapper">
+        <img src="./asphalt.jpg" alt="Video 4 Thumbnail" data-video="https://www.youtube.com/embed/2T0W9ALN0Hc">
+      </div>
+      <div class="card-content">
+        <h3>Asphalt 9 Legends</h3>
+        <p>"Speed costs money. How fast do you want to go?. You win some, you lose some, you wreck some.</p>
+        <a href="https://example.com/asphalt-9-download" target="_blank" style="color: #2ecc71; text-decoration: none;">DOWNLOAD</a>
+      </div>
+    </div>
+
+    <div class="card card-5">
+      <div class="video-wrapper">
+        <img src="./trackmania.webp" alt="Video 5 Thumbnail" data-video="https://www.youtube.com/embed/hiThw9qFQ6U">
+      </div>
+      <div class="card-content">
+        <h3>Track Mania 5</h3>
+        <p>"The real purpose of running isn't to win a race. It's to test the limits of the human heart."</p>
+        <a href="https://example.com/track-mania-download" target="_blank" style="color: #2ecc71; text-decoration: none;">DOWNLOAD</a>
+      </div>
+    </div>
+
+    <div class="card card-6">
+      <div class="video-wrapper">
+        <img src="./f11.webp" alt="Video 6 Thumbnail" data-video="https://www.youtube.com/embed/hiThw9qFQ6U">
+      </div>
+      <div class="card-content">
+        <h3>Formula 1</h3>
+        <p>“If you can leave two black stripes from the exit of one corner to the braking zone of the next, you have enough horsepower"</p>
+        <a href="https://example.com/formula-1-download" target="_blank" style="color: #2ecc71; text-decoration: none;">DOWNLOAD</a>
+      </div>
+    </div>
+
+  </div> <!-- end blog-card -->
+
+</div> <!-- end wrapper -->
+
+<!-- VIDEO MODAL -->
+<div id="videoModal">
+  <div id="modalContent">
+    <span id="closeModal">&times;</span>
+    <iframe id="modalIframe" src="" allowfullscreen></iframe>
+  </div>
+</div>
+
+<audio id="raceMusic" autoplay loop>
+  <source src="./gaming.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+
+<script>
+/* ----------------- REVEAL ANIMATION ----------------- */
+const circleEl = document.getElementById("circle");
+const blogCardEl = document.getElementById("blogCard");
+const cardsEl = document.querySelectorAll(".card");
+
+let revealed = false;
+function reveal() {
+  if (revealed) return;
+  revealed = true;
+
+  circleEl.style.opacity = "0";
+  circleEl.style.transform = "scale(0.4) rotate(15deg)";
+
+  setTimeout(() => {
+    blogCardEl.style.opacity = "1";
+    blogCardEl.style.transform = "scale(1)";
+  }, 300);
+
+  cardsEl.forEach((card, i) => {
+    setTimeout(() => {
+      card.style.opacity = "1";
+      card.style.transform = "translateY(0) scale(1)";
+    }, 150 * i);
+  });
+}
+
+document.querySelector(".wrapper").addEventListener("mouseenter", reveal);
+document.querySelector(".wrapper").addEventListener("click", reveal);
+
+/* ----------------- VIDEO MODAL ----------------- */
+const modal = document.getElementById('videoModal');
+const modalIframe = document.getElementById('modalIframe');
+const closeModal = document.getElementById('closeModal');
+
+document.querySelectorAll('.video-wrapper img').forEach(img => {
+  img.addEventListener('click', () => {
+    modal.style.display = 'flex';
+    modalIframe.src = img.dataset.video;
+  });
+});
+
+closeModal.addEventListener('click', () => {
+  modal.style.display = 'none';
+  modalIframe.src = '';
+});
+
+modal.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    modal.style.display = 'none';
+    modalIframe.src = '';
+  }
+});
+  // Some browsers block autoplay with sound
+  // This will unmute and play after the first user click
+  document.addEventListener("click", () => {
+    const music = document.getElementById("raceMusic");
+    music.muted = false;
+    music.play();
+  });
+</script>
+
+</body>
+</html>
