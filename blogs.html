@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UMU Gaming Blog</title>
+<link rel="icon" href="./car.jpg">
+
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="./gaming-blog.css" rel="stylesheet">
+<script src="./gaming-blog.js"></script>
+
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body><div id="glitchTransition"></div>
+
+
+
+
+<!-- ---------------- NAVBAR ---------------- -->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">UMU GAMING ZONE</a>
+        <button class="navbar-toggler bg-info" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="https://namaramodern.github.io/UMU_WebDev_GroupK_2025-/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://kalyango-stewart-j.github.io/Umu-gamers/">Blogs</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">About Us</a></li>
+                <li class="nav-item"><a class="nav-link active" href="#">Store</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blogs">Games</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<audio id="raceMusic" autoplay loop>
+  <source src="./gaming.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  // Some browsers block autoplay with sound
+  // This will unmute and play after the first user click
+  document.addEventListener("click", () => {
+    const music = document.getElementById("raceMusic");
+    music.muted = false;
+    music.play();
+  });
+</script>
+
+
+<!-- ---------------- HERO SECTION ---------------- -->
+<section id="hero">
+    <h1>Enter the Umu Racing Duels </h1>
+    <p class="lead" style="z-index:1;">Gaming · Tech · E-Sports · Future</p>
+</section>
+
+<!-- BLOG SECTION -->
+<section id="blogs" class="container mt-5">
+    <h2 class="text-center mb-4" style="color:#0ff;">Umu Presents You Race Till The Finish Line</h2>
+
+    <div class="row g-4">
+
+        
+        <div class="col-md-4">
+            <div class="card blog-card">
+                <img src="./spotlight.jpg" class="card-img-top uniform-img">
+                <div class="card-body">
+                    <h5 style="text-align: center;">Top Umu-deadly Games 2025</h5>
+                    <p style="color: white;">Explore the neon-lit worlds defining the future of gaming.</p>
+                    <a href="readmore.html"><button class="cyber-btn read-btn center-btn">CLICK HERE</button></a>
+                </div>
+            </div>
+        </div>
+
+      <div class="col-md-4">
+    <div class="card blog-card">
+        <img src="./meter.jpg" class="card-img-top uniform-img">
+        <div class="card-body">
+            <h5 style="text-align: center;">AI-Powered Gaming PCs</h5>
+            <p style="color: white;">How artificial intelligence is creating the next generation rigs and horsepower vehicles.</p>
+            <a href="readmore.html"><button class="cyber-btn read-btn center-btn">CLICK HERE</button></a>
+        </div>
+    </div>
+    </div>
+
+
+       
+        <div class="col-md-4">
+            <div class="card blog-card">
+                <img src="./bike2.jpg" class="card-img-top uniform-img">
+                <div class="card-body">
+                    <h5 style="text-align: center;">E-Sports 2030</h5>
+                    <p style="color: white;">The rise of VR arenas and hologram tournaments all-over the umu community.</p>
+                   <a href="readmore.html"><button class="cyber-btn read-btn center-btn">CLICK HERE</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="blogs" class="container mt-5">
+    
+    <div class="row g-4">
+
+        
+        <div class="col-md-4">
+            <div class="card blog-card">
+                <img src="./road.jpg" class="card-img-top uniform-img">
+                <div class="card-body">
+                    <h5 style="text-align: center;">Motorsport History & Trivia</h5>
+                    <p style="color: white;">Post historical races, classic moments, or legendary cars.</p>
+                    <a href="readmore.html"><button class="cyber-btn read-btn center-btn">CLICK HERE</button></a>
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="col-md-4">
+            <div class="card blog-card">
+                <img src="./car.jpg" class="card-img-top uniform-img">
+                <div class="card-body">
+                    <h5 style="text-align: center;">Race Reviews / Analysis</h5>
+                    <p style="color: white;">Spotlight drivers, mechanics, or team owners,career stats.</p>
+                    <a href="readmore.html"><button class="cyber-btn read-btn center-btn">CLICK HERE</button></a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="col-md-4">
+            <div class="card blog-card">
+                <img src="bike.jpg" class="card-img-top uniform-img">
+                <div class="card-body">
+                    <h5 style="text-align: center;">Race Recaps</h5>
+                    <p style="color: white;">Summarize results, highlight winners,discuss surprises.</p>
+                   <a href="readmore.html"><button class="cyber-btn read-btn center-btn">CLICK HERE</button></a>
+                   
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ---------------- CONTACT FORM ---------------- -->
+<section id="contact" class="container mt-5">
+    <h2 class="text-center mb-4" style="color:#0ff;">Contact The Umu-xus</h2>
+
+    <form class="row g-3">
+        <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Racername">
+        </div>
+        <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Encrypted Email">
+        </div>
+        <div class="col-12">
+            <textarea class="form-control" rows="4" placeholder="Transmission Message"></textarea>
+        </div>
+        <div class="col-12 text-center">
+            
+            <button id="sendBtn" class="cyber-btn" type="button">Send Transmission</button>
+
+        </div>
+    </form>
+</section>
+<br><br>
+<section>
+    The Mandate of UMU GAMING ZONE is to create, manage, maintain & operationeralise the Gaming Register by registering all gamers of Umu community, registering non-umu gamers who are lawfully residents in Nkozi, registering wins and losses, assigning a unique Gaming Identification Number to every person registered.
+    <p></p>
+    <div class="social-icons">
+  <a href="https://www.facebook.com/YourPage" target="_blank">
+    <img src="./facebook.jpg" alt="Facebook">
+  </a>
+  <a href="https://twitter.com/YourProfile" target="_blank">
+    <img src="./twitter.png" alt="Twitter">
+  </a>
+  <a href="https://www.instagram.com/YourProfile" target="_blank">
+    <img src="./insta.jpg" alt="Instagram">
+  </a>
+  <a href="https://www.linkedin.com/in/YourProfile" target="_blank">
+    <img src="./link.png" alt="LinkedIn">
+  </a>
+</div>
+</section>
+
+<!-- ---------------- FOOTER ---------------- -->
+<footer>
+    <p> <span id="currentYear"></span>© UMU-RACE-TILL-FINISH-LINE · All Rights Reserved</p>
+    <p>KALYANGO STEWART JUNIOR -||-  REG NO: 2025-B291-13614 -||- BSc Computer Science</p>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>
