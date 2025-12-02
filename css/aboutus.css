@@ -1,0 +1,214 @@
+/* GENERAL RESET */
+body, html {
+     margin: 0;
+    padding: 0;
+    background-image: url(WORLD\ OF\ TANKS.webp);
+    background-size: cover;         /* fills the entire page */
+    background-attachment: fixed;   /* stays still when you scroll */
+    background-position: center;    /* centers the image */
+    background-repeat: no-repeat;   /* avoids repeating */
+    
+    
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45); /* dark layer for readability */
+    z-index: -1;
+}
+
+/* VIDEO SECTION */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 420px;
+}
+
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.video-section .content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+    
+
+
+/* Text on video */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+}
+
+
+/* NORMAL SECTIONS (NO VIDEO HERE) */
+.normal-section {
+    padding: 50px;
+    background: #ffffff;   /* white or any color */
+    color: #000000;
+    min-height: 70vh;
+}
+.image-grid img {
+   width: 100%;
+    height: 200px;   
+    object-fit: cover; 
+    border-radius: 10px;
+    display: block;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(5, 3, 41, 0.9);
+    margin-top: 40px;
+    border-top: 3px solid #a33812;
+    color: rgb(138, 24, 24);
+}
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #ff4500;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.image-grid {
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-grid img:hover {
+    transform: scale(1.03);
+}
+.content2{
+position: relative;
+background-image: url(WAR\ THUNDER.avif);
+    width: 100%;
+               /* video area height */
+    overflow: hidden;
+}
+.cards{
+     justify-content: space-between;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 8px;
+    padding: 10px;
+    background-color: #ffff;
+    font-size: 15px;
+    text-align: center;
+}
+.parent-card d-flex justify-content-around mt-3{
+display: block;
+width: 350px;
+border-radius: 10px;
+overflow: hidden; 
+box-shadow: o 4px 8px rgb(0,0,0,0.1)
+}
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px black;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px black;
+}
+.carousel-indicators [data-bs-target] {
+    background-color: #ff4500;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%); 
+    width: 45px;
+    height: 45px;
+}
+.main-div{
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+
+ 
+
+}
+
+
+.slider-img {
+  width: 100%;
+  height: 450px;            
+  object-fit: cover;        
+  display: block;
+}
+.videosec{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+    .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+.card {
+    height: 300px; 
+    overflow: hidden;
+    border-radius: 10px;
+}
+.nav-link:hoover{
+    background-color: rgb(83, 105, 231);
+    box-shadow: 0 12px 25px;
+    transform: translateX(-5px);
+}
+.about-text{
+      font-size: 1.4rem;
+    margin-bottom: 15px;
+    color: #ff4500;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-link:hoover{
+ background-color: rgb(83, 105, 231);
+    box-shadow: 0 12px 25px;
+    transform: translateX(-5px);
+}
+.card-img:hover {
+    transform: scale(1.03);
+}
