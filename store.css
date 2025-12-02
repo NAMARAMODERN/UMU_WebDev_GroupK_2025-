@@ -1,0 +1,42 @@
+.main div{
+    background-color: aquamarine;
+    border-radius: 10%;
+    display: flex;
+    
+
+}
+.card{
+    background-color: red;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: small;
+    display: flex;
+}
+.card{
+    background-color:palevioletred;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: small;
+    display: flex;
+}
+.card{
+    background-color: green;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: small;
+    display: flex;
+}
+.card{
+    background-color: purple;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: small;
+    display: flex;
+}
+.card{
+    background-color:gold;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: small;
+    display: flex;
+}
