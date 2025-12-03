@@ -1,0 +1,58 @@
+body{
+  background-image: url(./WhatsApp\ Image\ 2025-12-02\ at\ 21.24.37_d2e22161.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+   margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.mb-3 {
+    font-size: 50px;
+    font-style: italic;
+    
+}   
+.mb-3{
+    font-size: 20px;
+    font-style: italic;
+    
+}
+
+ a {
+    position:relative;
+    width: 150px;
+    height:55px;
+    display: inline-block;
+    border-radius:5px;
+    
+ }   
+ input-textarea{
+    width: 100px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: antiquewhite;
+
+ }
+.social-icons a {
+    position: fixed;
+    margin-right: 80px;
+    left: 20;
+    transform: translateX(50%);
+    display: flex;
+    
+    
+}
+     
+
+.social-icons img{
+    width: 35px;
+    height: 35px;
+}
+
+
+
