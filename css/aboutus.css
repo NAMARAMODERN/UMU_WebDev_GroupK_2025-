@@ -174,14 +174,7 @@ box-shadow: o 4px 8px rgb(0,0,0,0.1)
   object-fit: cover;        
   display: block;
 }
-.videosec{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
+
     .card-img {
     height: 100%;
     width: 100%;
@@ -204,11 +197,7 @@ box-shadow: o 4px 8px rgb(0,0,0,0.1)
     text-transform: uppercase;
     font-weight: bold;
 }
-.nav-link:hoover{
- background-color: rgb(83, 105, 231);
-    box-shadow: 0 12px 25px;
-    transform: translateX(-5px);
-}
+
 .card-img:hover {
     transform: scale(1.03);
 }
