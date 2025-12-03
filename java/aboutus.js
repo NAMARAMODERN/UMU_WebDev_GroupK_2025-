@@ -1,80 +1,80 @@
+document.addEventListener("DOMContentLoaded", function () {
 
+  //  NAVBAR EFFECT
+  document.querySelectorAll(".nav-link").forEach(link => {
+    link.style.transition = "0.3s";
 
-
-// 1. Show a welcome message when the page loads
-window.addEventListener("load", function () {
-    console.log("Welcome to UMU Gaming Zone! JavaScript Loaded Successfully.");
-});
-
-// ---------------------------------------------------------
-
-// 2. Highlight Navbar Links When Scrolling
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav ul li a");
-
-window.addEventListener("scroll", () => {
-    let current = "";
-
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 100) {
-            current = section.getAttribute("class");
-        }
+    link.addEventListener("mouseenter", () => {
+      link.style.color = "aqua";
+      link.style.textShadow = "0 0 10px cyan";
+      link.style.transform = "scale(1.1)";
     });
 
-    navLinks.forEach(a => {
-        a.classList.remove("active");
-        if (a.href.includes(current)) {
-            a.classList.add("active");
-        }
+    link.addEventListener("mouseleave", () => {
+      link.style.color = "";
+      link.style.textShadow = "none";
+      link.style.transform = "scale(1)";
     });
-});
+  });
 
-// ---
 
-// 3. Click to Zoom Image Effect
-const galleryImages = document.querySelectorAll(".image-grid img");
+  //  GALLERY & VIDEO IMAGES EFFECT
+  document.querySelectorAll(".image-grid img").forEach(img => {
+    img.style.transition = "0.3s";
 
-galleryImages.forEach(img => {
-    img.addEventListener("click", function () {
-        img.classList.toggle("zoomed");
+    img.addEventListener("mouseover", () => {
+      img.style.transform = "scale(1.08)";
+      img.style.boxShadow = "0 10px 20px rgba(0,0,0,0.6)";
     });
-});
 
-
-            // Simple interactive effect
-            const header = document.querySelector('header');
-            header.addEventListener('mouseover', () => {
-                header.style.color = '#ff4500';
-            });
-            header.addEventListener('mouseout', () => {
-                header.style.color = '#ffffff';
-            });
-            // Show message when page loads
-window.onload = function () {
-    alert("Welcome to the Fitness Training Website!");
-};
-
-// Add click actions to social icons
-document.querySelectorAll(".folo img").forEach(function (icon) {
-    icon.addEventListener("click", function () {
-        alert("You clicked a social media icon!");
+    img.addEventListener("mouseout", () => {
+      img.style.transform = "scale(1)";
+      img.style.boxShadow = "none";
     });
+  });
+
+
+  //  CARD EFFECT
+  document.querySelectorAll(".card").forEach(card => {
+    card.style.transition = "0.3s";
+
+    card.addEventListener("mouseenter", () => {
+      card.style.transform = "translateY(-10px) scale(1.05)";
+      card.style.boxShadow = "0 15px 30px rgba(0,0,0,0.6)";
+    });
+
+    card.addEventListener("mouseleave", () => {
+      card.style.transform = "translateY(0) scale(1)";
+      card.style.boxShadow = "none";
+    });
+  });
+
+
+  //  SLIDER IMAGE EFFECT
+  document.querySelectorAll(".slider-img").forEach(slide => {
+    slide.style.transition = "0.5s";
+
+    slide.addEventListener("mouseenter", () => {
+      slide.style.transform = "scale(1.05)";
+    });
+
+    slide.addEventListener("mouseleave", () => {
+      slide.style.transform = "scale(1)";
+    });
+  });
+
+
+  //  SOCIAL ICON EFFECT
+  document.querySelectorAll(".footer img").forEach(icon => {
+    icon.style.transition = "0.3s";
+
+    icon.addEventListener("mouseenter", () => {
+      icon.style.transform = "scale(1.3) rotate(5deg)";
+    });
+
+    icon.addEventListener("mouseleave", () => {
+      icon.style.transform = "scale(1) rotate(0deg)";
+    });
+  });
+
 });
-
-// Search button functionality
-let searchBtn = document.querySelector("button.btn-outline-success");
-searchBtn.addEventListener("click", function () {
-    let keyword = prompt("Enter something to search:");
-    if (keyword) {
-        alert("You searched for: " + keyword);
-    } else {
-        alert("Search cancelled");
-    }
-});
-
-// Auto footer message
-console.log("© 2025 Fitness Training Website – JavaScript active.");
-
-        
-    
