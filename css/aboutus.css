@@ -212,3 +212,25 @@ box-shadow: o 4px 8px rgb(0,0,0,0.1)
 .card-img:hover {
     transform: scale(1.03);
 }
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(6px);
+    border-bottom: 2px solid #0ff;
+    box-shadow: 0 0 12px #0ff;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    color: #0ff !important;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px #0ff;
+}
+
+.nav-link {
+    color: #9dfcff !important;
+    letter-spacing: 1px;
+}
+.nav-link:hover {
+    color: #fff !important;
+    text-shadow: 0 0 10px #0ff;
+}
