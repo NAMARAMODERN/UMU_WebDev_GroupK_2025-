@@ -1,5 +1,5 @@
 /* GENERAL RESET */
-body, html {
+.body, html {
      margin: 0;
     padding: 0;
     background-image: url(https://namaramodern.github.io/UMU_WebDev_GroupK_2025-/images/WORLD\ OF\ TANKS.webp);
@@ -10,7 +10,7 @@ body, html {
     
     
 }
-body::before {
+.body::before {
     content: "";
     position: fixed;
     top: 0;
@@ -86,7 +86,7 @@ body::before {
     display: block;
 }
 /* FOOTER */
-footer {
+.footer {
     text-align: center;
     padding: 20px;
     background: rgba(5, 3, 41, 0.9);
@@ -223,4 +223,5 @@ box-shadow: o 4px 8px rgb(0,0,0,0.1)
     color: #fff !important;
     text-shadow: 0 0 10px #0ff;
 }
+
 
