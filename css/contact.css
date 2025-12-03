@@ -1,58 +1,109 @@
-body{
-  background-image: url(./WhatsApp\ Image\ 2025-12-02\ at\ 21.24.37_d2e22161.jpg);
+/* General body styling */
+body {
+  background-image: url("./WhatsApp Image 2025-12-02 at 21.24.37_d2e22161.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-   margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border: 10px solid;
 }
+
+/* Text spacing and style */
 .mb-3 {
-    font-size: 50px;
-    font-style: italic;
-    
-}   
-.mb-3{
-    font-size: 20px;
-    font-style: italic;
-    
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 1rem;
 }
 
- a {
-    position:relative;
-    width: 150px;
-    height:55px;
-    display: inline-block;
-    border-radius:5px;
-    
- }   
- input-textarea{
-    width: 100px;
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    background-color: antiquewhite;
+/* Contact section */
+.contact {
+  text-align: center;
+  padding: 20px;
+}
 
- }
+/* Flex container for items */
+.vool {
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap; /* makes it responsive */
+}
+.navbar-brand{
+    width: fit-content;
+    border-radius: 10px;
+}
+
+/* Links (buttons style) */
+a {
+  position: relative;
+  width: 150px;
+  height: 55px;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 55px;
+  background-color: #f0f0f0;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Input and textarea */
+input,
+textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: antiquewhite;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Social icons */
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 15px;
+}
+
 .social-icons a {
-    position: fixed;
-    margin-right: 80px;
-    left: 20;
-    transform: translateX(50%);
-    display: flex;
-    
-    
-}
-     
-
-.social-icons img{
-    width: 35px;
-    height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.social-icons img {
+  width: 35px;
+  height: 35px;
+}
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .vool {
+    flex-direction: column;
+    gap: 20px;
+  }
 
+  a {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  body {
+    border: none; /* remove border on small screens */
+  }
+}
