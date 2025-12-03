@@ -68,15 +68,7 @@
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 8px black;
-}
 
-
-/* NORMAL SECTIONS (NO VIDEO HERE) */
-.normal-section {
-    padding: 50px;
-    background: #ffffff;   /* white or any color */
-    color: #000000;
-    min-height: 70vh;
 }
 .image-grid img {
    width: 100%;
@@ -223,5 +215,6 @@ box-shadow: o 4px 8px rgb(0,0,0,0.1)
     color: #fff !important;
     text-shadow: 0 0 10px #0ff;
 }
+
 
 
