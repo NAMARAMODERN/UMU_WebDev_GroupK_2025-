@@ -2,7 +2,7 @@
 body, html {
      margin: 0;
     padding: 0;
-    background-image: url(WORLD\ OF\ TANKS.webp);
+    background-image: url(https://namaramodern.github.io/UMU_WebDev_GroupK_2025-/images/WORLD\ OF\ TANKS.webp);
     background-size: cover;         /* fills the entire page */
     background-attachment: fixed;   /* stays still when you scroll */
     background-position: center;    /* centers the image */
@@ -113,7 +113,7 @@ footer {
 }
 .content2{
 position: relative;
-background-image: url(WAR\ THUNDER.avif);
+background-image: url(https://namaramodern.github.io/UMU_WebDev_GroupK_2025-/images/WAR\ THUNDER.avif);
     width: 100%;
                /* video area height */
     overflow: hidden;
@@ -223,3 +223,4 @@ box-shadow: o 4px 8px rgb(0,0,0,0.1)
     color: #fff !important;
     text-shadow: 0 0 10px #0ff;
 }
+
