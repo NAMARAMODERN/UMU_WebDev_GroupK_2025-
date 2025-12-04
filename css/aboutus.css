@@ -1,23 +1,23 @@
 /* GENERAL RESET */
-.body, html {
-     margin: 0;
+body, html {
+    margin: 0;
     padding: 0;
-    background-image: url(https://namaramodern.github.io/UMU_WebDev_GroupK_2025-/images/WORLD\ OF\ TANKS.webp);
-    background-size: cover;         /* fills the entire page */
-    background-attachment: fixed;   /* stays still when you scroll */
-    background-position: center;    /* centers the image */
-    background-repeat: no-repeat;   /* avoids repeating */
-    
+    background-image: url("https://namaramodern.github.io/UMU_WebDev_GroupK_2025-/images/WORLD OF TANKS.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
     
 }
-.body::before {
+body::before {
     content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.45); /* dark layer for readability */
+    background: rgba(0,0,0,0.45);
     z-index: -1;
 }
 
@@ -103,11 +103,10 @@
 .image-grid img:hover {
     transform: scale(1.03);
 }
-.content2{
-position: relative;
-background-image: url(https://namaramodern.github.io/UMU_WebDev_GroupK_2025-/images/WAR\ THUNDER.avif);
+.content2 {
+    position: relative;
+    background-image: url("https://namaramodern.github.io/UMU_WebDev_GroupK_2025-/images/WAR THUNDER.avif");
     width: 100%;
-               /* video area height */
     overflow: hidden;
 }
 .cards{
@@ -121,12 +120,12 @@ background-image: url(https://namaramodern.github.io/UMU_WebDev_GroupK_2025-/ima
     font-size: 15px;
     text-align: center;
 }
-.parent-card d-flex justify-content-around mt-3{
-display: block;
-width: 350px;
-border-radius: 10px;
-overflow: hidden; 
-box-shadow: o 4px 8px rgb(0,0,0,0.1)
+.parent-card.d-flex.justify-content-around.mt-3 {
+    display: block;
+    width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 .carousel-caption h5 {
     font-size: 2rem;
@@ -177,9 +176,9 @@ box-shadow: o 4px 8px rgb(0,0,0,0.1)
     overflow: hidden;
     border-radius: 10px;
 }
-.nav-link:hoover{
+.nav-link:hover {
     background-color: rgb(83, 105, 231);
-    box-shadow: 0 12px 25px;
+    box-shadow: 0 12px 25px black;
     transform: translateX(-5px);
 }
 .about-text{
@@ -215,6 +214,7 @@ box-shadow: o 4px 8px rgb(0,0,0,0.1)
     color: #fff !important;
     text-shadow: 0 0 10px #0ff;
 }
+
 
 
 
