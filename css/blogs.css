@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 
-/* animated background scan lines */
+
 body::before {
     content: "";
     position: fixed;
@@ -32,8 +32,6 @@ body::before {
     100% { background-position: 0 200px; }
 }
 
-/* ---------------- NAVBAR ---------------- */
-
 .navbar {
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(6px);
@@ -57,7 +55,6 @@ body::before {
     text-shadow: 0 0 10px #0ff;
 }
 
-/* ---------------- HERO SECTION ---------------- */
 
 #hero {
     height: 70vh;
@@ -81,7 +78,7 @@ body::before {
     top: 0;
 }
 
-/* neon title */
+
 #hero h1 {
     font-size: 3.5rem;
     z-index: 1;
@@ -93,7 +90,6 @@ body::before {
     to { text-shadow: 0 0 30px #00eaff, 0 0 60px #00d0ff; }
 }
 
-/* ---------------- BLOG CARDS ---------------- */
 
 .blog-card {
     background: rgba(0, 15, 20, 0.7);
@@ -122,7 +118,7 @@ body::before {
     color: #0ff;
 }
 
-/* futuristic button */
+
 .cyber-btn {
     border: 2px solid #0ff;
     color: #0ff;
@@ -138,7 +134,6 @@ body::before {
     box-shadow: 0 0 20px #0ff;
 }
 
-/* ---------------- FOOTER ---------------- */
 
 footer {
     margin-top: 60px;
@@ -148,7 +143,6 @@ footer {
     box-shadow: 0 -5px 20px #0ff;
 }
 
-/* ---------------- CONTACT FORM ---------------- */
 
 .form-control {
     background: rgba(0, 30, 30, 0.8);
@@ -171,9 +165,9 @@ footer {
 }
 .social-icons {
     display: flex;
-    gap: 20px; /* space between icons */
-    justify-content: center; /* center icons horizontally */
-    flex-wrap: wrap; /* wrap on smaller screens */
+    gap: 20px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
     margin: 20px 0;
   }
 
@@ -183,16 +177,17 @@ footer {
     transition: transform 0.3s, filter 0.3s;
   }
 
-  /* Hover effect */
+  
   .social-icons a img:hover {
     transform: scale(1.2);
     filter: brightness(1.2);
   }
 
-  /* Make icons smaller on mobile screens */
+  
   @media (max-width: 600px) {
     .social-icons a img {
       width: 40px;
       height: 40px;
     }
   }
+
