@@ -1,9 +1,15 @@
 
-document.querySelectorAll(".read-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-        alert("This will open the futuristic blog page. (Demo mode)");
+   document.querySelectorAll(".read-btn").forEach(btn => {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault(); 
+
+            alert("HEY🎮🎮🎮 feel free to continue...... (Game mode)");
+
+           
+            const link = btn.dataset.link;
+            window.location.href = link;
+        });
     });
-});
 
 
 function goToTop() {
@@ -36,4 +42,5 @@ window.addEventListener("load", function () {
     console.log("Page Loaded Successfully!");
     alert(" You're Welcome Racer!! Just refill the tank to Enjoy");
 });
+
 
