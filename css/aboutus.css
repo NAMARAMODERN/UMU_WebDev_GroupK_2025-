@@ -1,13 +1,12 @@
-/* GENERAL RESET */
 body, html {
-    margin: 0;
+     margin: 0;
     padding: 0;
-    background-image: url("https://namaramodern.github.io/UMU_WebDev_GroupK_2025-/images/WORLD OF TANKS.webp");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-
+    background-image: url(https://namaramodern.github.io/UMU_WebDev_GroupK_2025-/images/WORLD\ OF\ TANKS.webp);
+    background-size: cover;         /* fills the entire page */
+    background-attachment: fixed;   /* stays still when you scroll */
+    background-position: center;    /* centers the image */
+    background-repeat: no-repeat;   /* avoids repeating */
+    
     
 }
 body::before {
@@ -17,7 +16,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0,0,0,0.45); /* dark layer for readability */
     z-index: -1;
 }
 
@@ -68,7 +67,15 @@ body::before {
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 8px black;
+}
 
+
+/* NORMAL SECTIONS (NO VIDEO HERE) */
+.normal-section {
+    padding: 50px;
+    background: #ffffff;   /* white or any color */
+    color: #000000;
+    min-height: 70vh;
 }
 .image-grid img {
    width: 100%;
@@ -103,10 +110,11 @@ body::before {
 .image-grid img:hover {
     transform: scale(1.03);
 }
-.content2 {
-    position: relative;
-    background-image: url("https://namaramodern.github.io/UMU_WebDev_GroupK_2025-/images/WAR THUNDER.avif");
+.content2{
+position: relative;
+background-image: url(https://namaramodern.github.io/UMU_WebDev_GroupK_2025-/images/WAR\ THUNDER.avif);
     width: 100%;
+               /* video area height */
     overflow: hidden;
 }
 .cards{
@@ -121,11 +129,11 @@ body::before {
     text-align: center;
 }
 .parent-card.d-flex.justify-content-around.mt-3 {
-    display: block;
-    width: 350px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+display: block;
+width: 350px;
+border-radius: 10px;
+overflow: hidden; 
+box-shadow: o 4px 8px rgb(0,0,0,0.1)
 }
 .carousel-caption h5 {
     font-size: 2rem;
@@ -176,9 +184,9 @@ body::before {
     overflow: hidden;
     border-radius: 10px;
 }
-.nav-link:hover {
+.nav-link:hover{
     background-color: rgb(83, 105, 231);
-    box-shadow: 0 12px 25px black;
+    box-shadow: 0 12px 25px;
     transform: translateX(-5px);
 }
 .about-text{
@@ -214,6 +222,7 @@ body::before {
     color: #fff !important;
     text-shadow: 0 0 10px #0ff;
 }
+
 
 
 
