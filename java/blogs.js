@@ -21,8 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-  // Some browsers block autoplay with sound
-  // This will unmute and play after the first user click
   document.addEventListener("click", () => {
     const music = document.getElementById("raceMusic");
     music.muted = false;
@@ -30,17 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   
-  // Select all buttons on the page
+  
   const allButtons = document.querySelectorAll('button');
 
-  // Loop through each button and add click event
-  allButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      alert("Accept okay");
-    });
-  });
-// Smooth welcome message when page loads
+
 window.addEventListener("load", function () {
     console.log("Page Loaded Successfully!");
     alert(" You're Welcome Racer!! Just refill the tank to Enjoy");
 });
+
