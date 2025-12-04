@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  //  NAVBAR EFFECT
+  // NAVBAR EFFECT
   document.querySelectorAll(".nav-link").forEach(link => {
     link.style.transition = "0.3s";
 
@@ -17,61 +17,49 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-
-  //  GALLERY & VIDEO IMAGES EFFECT
+  // GALLERY IMAGE EFFECT
   document.querySelectorAll(".image-grid img").forEach(img => {
     img.style.transition = "0.3s";
-
     img.addEventListener("mouseover", () => {
       img.style.transform = "scale(1.08)";
       img.style.boxShadow = "0 10px 20px rgba(0,0,0,0.6)";
     });
-
     img.addEventListener("mouseout", () => {
       img.style.transform = "scale(1)";
       img.style.boxShadow = "none";
     });
   });
 
-
-  //  CARD EFFECT
+  // CARD EFFECT
   document.querySelectorAll(".card").forEach(card => {
     card.style.transition = "0.3s";
-
     card.addEventListener("mouseenter", () => {
       card.style.transform = "translateY(-10px) scale(1.05)";
       card.style.boxShadow = "0 15px 30px rgba(0,0,0,0.6)";
     });
-
     card.addEventListener("mouseleave", () => {
       card.style.transform = "translateY(0) scale(1)";
       card.style.boxShadow = "none";
     });
   });
 
-
-  //  SLIDER IMAGE EFFECT
+  // SLIDER IMAGE EFFECT
   document.querySelectorAll(".slider-img").forEach(slide => {
     slide.style.transition = "0.5s";
-
     slide.addEventListener("mouseenter", () => {
       slide.style.transform = "scale(1.05)";
     });
-
     slide.addEventListener("mouseleave", () => {
       slide.style.transform = "scale(1)";
     });
   });
 
-
-  //  SOCIAL ICON EFFECT
+  // SOCIAL ICON EFFECT
   document.querySelectorAll(".footer img").forEach(icon => {
     icon.style.transition = "0.3s";
-
     icon.addEventListener("mouseenter", () => {
       icon.style.transform = "scale(1.3) rotate(5deg)";
     });
-
     icon.addEventListener("mouseleave", () => {
       icon.style.transform = "scale(1) rotate(0deg)";
     });
